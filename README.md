@@ -23,6 +23,7 @@ This guide is the shortest honest path I know from "never heard of it" to "first
 - [Step 5 — Bundle your transcripts](#step-5--bundle-your-transcripts)
 - [Step 6 — Check, then submit](#step-6--check-then-submit)
 - [Step 7 — Claim your reward](#step-7--claim-your-reward)
+- [After your first entry — the loop that compounds](#after-your-first-entry--the-loop-that-compounds)
 - [How entries are really judged](#how-entries-are-really-judged)
 - [Mistakes that cost people entries](#mistakes-that-cost-people-entries)
 - [Get your own referral link](#get-your-own-referral-link)
@@ -158,6 +159,16 @@ node cli/makefun.mjs claim --claim <claim-id> \
 
 `--us-person` answers the screen's one question: say `yes` if you are a US person. The reward is paid in USDC on Solana to your wallet after an automatic sanctions screen. A tax form is only asked for where US law requires one. Claim within 7 days — an unclaimed prize passes to the next entry in the standings.
 
+## After your first entry — the loop that compounds
+
+One entry teaches you the mechanics. The second one is where the habit pays off, because steps 1–4 are already done and your agent already knows the loop. A routine that works for a lot of builders:
+
+1. **Skim the board every morning.** New bounties land regularly; the ones with a day or two left and a small, clear deliverable are the best value — fewer builders attempt them, and the work is bounded.
+2. **Keep a shortlist, not a backlog.** Two or three bounties you could genuinely build well beats ten you half-understood. Read the rules of each before committing.
+3. **Reuse your setup, never your entries.** The kit commands, the login, the wallet, the license — all reusable. The code and the transcripts are not: every entry is built fresh, in a fresh session, or the transcript gate will catch it.
+4. **Submit early, then improve.** Your first submission locks in the earlier receipt time for ties. If the checks pass and the deadline is still far off, you can keep building and resubmit — your latest submission before the deadline is the one that counts.
+5. **Share the guide, not just the link.** The referral rewards compound when people actually use your link and take part. A guide someone followed to their first entry is worth far more than a link dropped in a chat: the signup only counts once the person genuinely participates.
+
 ## How entries are really judged
 
 Three mechanisms do most of the fairness work, and understanding them changes how you build:
@@ -188,6 +199,9 @@ Every account gets a referral link like `https://make.fun/r/<code>`, and `?ref=<
 A referral binds to the code a visitor's browser first saw, and that first touch wins for 60 days — a later link does not replace it. So the link people click first is the one that matters. If this guide helped you, signing up through **https://make.fun/r/5tp8nwjm** (code `5tp8nwjm`) is a good way to say thanks — and then go get your own link and write your own guide. The best referral page is one you actually used yourself.
 
 ## FAQ
+
+**How do I know my entry was accepted?**
+Run `node cli/makefun.mjs status` — it shows submitted, checked, scored, or rejected for each entry. A rejected entry lists every failed check with its fix, and the bounty page's board shows accepted entries. If your entry does not appear after the checks pass locally, re-read the bounty rules for a requirement the local check cannot see (for example, the repository being public and owned by your linked GitHub account).
 
 **Does it cost anything to enter?**
 Most bounties are free to enter. The model calls your agent makes while building are on your own account — that is the real cost of entry, and it is yours to control.
